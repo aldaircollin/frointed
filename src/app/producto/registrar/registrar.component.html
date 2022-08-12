@@ -1,0 +1,39 @@
+<div class="card bg-light">
+    <h5 class="card-header">{{titulo}}</h5>
+    <div class="card-body">
+      <form (ngSubmit) = "crearProducto()">
+        <div class="row mb-3">
+          <label for="apellido" class="col-sm-2 col-form-label">NOMBRE PRODUCTO</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" placeholder="Ingrese Nombre del Producto" [(ngModel)]="producto.nombre" name="nombre">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="edad" class="col-sm-2 col-form-label">CATEGORIA</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" placeholder="Ingrese Categoria" [(ngModel)]="producto.categoria" name="categoria">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="edad" class="col-sm-2 col-form-label">PRECIO</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="Ingrese Precio" [(ngModel)]="producto.precio" name="categoria">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="edad" class="col-sm-2 col-form-label">CANTIDAD</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="Ingrese Cantidad" [(ngModel)]="producto.cantidad" name="categoria">
+            </div>
+          </div>
+  
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2" type="button">Cancelar</button>
+            <button class="btn btn-primary" role="button">Registrar</button>
+          </div>
+      </form>
+    </div>
+  </div>
+  
